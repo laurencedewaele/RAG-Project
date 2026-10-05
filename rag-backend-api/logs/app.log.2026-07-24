@@ -1,0 +1,139 @@
+2026-07-24 17:56:57,322 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 17:56:57,811 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 17:57:00,630 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 17:57:00,883 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 17:57:03,949 - chromadb.telemetry.product.posthog - [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-07-24 17:57:05,680 - chatbot.backend.observability - [INFO] - langfuse.client.initialized
+2026-07-24 17:57:05,699 - chatbot.backend.container - [WARNING] - ragas.adapter.init_failed
+2026-07-24 17:57:19,264 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-07-24 17:57:19,264 - chatbot.backend.observability - [INFO] - trace.start
+2026-07-24 17:57:21,492 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 18:17:53,681 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 18:17:54,138 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 18:17:56,944 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 18:17:57,200 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 18:18:00,041 - chromadb.telemetry.product.posthog - [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-07-24 18:18:01,047 - chatbot.backend.observability - [INFO] - langfuse.client.initialized
+2026-07-24 18:18:01,063 - chatbot.backend.container - [WARNING] - ragas.adapter.init_failed: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\bootstrap\container.py", line 66, in _build_evaluation_adapter
+    return RagasEvaluationAdapter(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\adapters\outbound\evaluation\ragas_evaluation_adapter.py", line 45, in __init__
+    self._evaluator_llm = llm_factory(llm_name, cache=cache, client=AsyncOpenAI())
+                                                                    ^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\openai\_client.py", line 826, in __init__
+    raise OpenAIError(
+openai.OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+2026-07-24 18:18:11,397 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 18:18:11,910 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 18:18:14,631 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 18:18:14,876 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 18:18:17,759 - chromadb.telemetry.product.posthog - [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-07-24 18:18:18,765 - chatbot.backend.observability - [INFO] - langfuse.client.initialized
+2026-07-24 18:18:18,780 - chatbot.backend.container - [WARNING] - ragas.adapter.init_failed: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\bootstrap\container.py", line 66, in _build_evaluation_adapter
+    return RagasEvaluationAdapter(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\adapters\outbound\evaluation\ragas_evaluation_adapter.py", line 45, in __init__
+    self._evaluator_llm = llm_factory(llm_name, cache=cache, client=AsyncOpenAI())
+                                                                    ^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\openai\_client.py", line 826, in __init__
+    raise OpenAIError(
+openai.OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+2026-07-24 18:20:25,660 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 18:20:25,755 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 18:20:30,985 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-07-24 18:20:30,985 - chatbot.backend.observability - [INFO] - trace.start
+2026-07-24 18:20:32,838 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 18:21:31,487 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 18:28:14,014 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 18:28:14,705 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 18:28:17,686 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-07-24 18:28:17,931 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-07-24 18:28:20,839 - chromadb.telemetry.product.posthog - [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-07-24 18:28:21,880 - chatbot.backend.observability - [INFO] - langfuse.client.initialized
+2026-07-24 18:28:21,902 - chatbot.backend.container - [WARNING] - ragas.adapter.init_failed: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\bootstrap\container.py", line 66, in _build_evaluation_adapter
+    return RagasEvaluationAdapter(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\adapters\outbound\evaluation\ragas_evaluation_adapter.py", line 45, in __init__
+    self._evaluator_llm = llm_factory(llm_name, cache=cache, client=AsyncOpenAI())
+                                                                    ^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\openai\_client.py", line 826, in __init__
+    raise OpenAIError(
+openai.OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+2026-07-24 19:02:51,251 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-07-24 19:02:51,251 - chatbot.backend.observability - [INFO] - trace.start
+2026-07-24 19:02:53,385 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 19:03:26,700 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-07-24 19:03:26,700 - chatbot.backend.observability - [INFO] - trace.start
+2026-07-24 19:03:28,702 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 19:08:30,824 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-07-24 19:08:30,824 - chatbot.backend.observability - [INFO] - trace.start
+2026-07-24 19:08:30,857 - chatbot.backend.inbound - [ERROR] - ask_question_failure
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\adapters\inbound\api\app.py", line 93, in ask_question
+    result = await run_in_threadpool(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\application\use_cases\ask_question.py", line 166, in execute
+    tokens_per_sec = int(output_tokens_total / generation_latency) if generation_latency > 0 else 0
+                                                                      ^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'generation_latency' where it is not associated with a value
+2026-07-24 19:08:30,871 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 19:15:32,933 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-07-24 19:15:32,934 - chatbot.backend.observability - [INFO] - trace.start
+2026-07-24 19:15:34,762 - chatbot.backend.inbound - [INFO] - http.request
+2026-07-24 19:18:02,864 - opentelemetry.context - [ERROR] - Failed to detach context
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\trace\__init__.py", line 608, in use_span
+    yield span
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\sdk\trace\__init__.py", line 1183, in start_as_current_span
+    yield span
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\langfuse\_client\client.py", line 1209, in _start_as_current_otel_span_with_processed_media
+    yield span_class(**common_args)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GeneratorExit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\context\__init__.py", line 135, in detach
+    _RUNTIME_CONTEXT.detach(token)
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\context\contextvars_context.py", line 42, in detach
+    self._current_context.reset(token)
+ValueError: <Token var=<ContextVar name='current_context' default={} at 0x00000290F4A2D990> at 0x00000290E023E700> was created in a different Context
+2026-07-24 19:18:02,880 - opentelemetry.sdk._shared_internal - [INFO] - Shutdown called, ignoring Span.
+2026-07-24 19:18:02,880 - opentelemetry.context - [ERROR] - Failed to detach context
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\trace\__init__.py", line 608, in use_span
+    yield span
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\sdk\trace\__init__.py", line 1183, in start_as_current_span
+    yield span
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\langfuse\_client\client.py", line 1209, in _start_as_current_otel_span_with_processed_media
+    yield span_class(**common_args)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GeneratorExit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\context\__init__.py", line 135, in detach
+    _RUNTIME_CONTEXT.detach(token)
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\opentelemetry\context\contextvars_context.py", line 42, in detach
+    self._current_context.reset(token)
+ValueError: <Token var=<ContextVar name='current_context' default={} at 0x00000290F4A2D990> at 0x00000290DBFD2280> was created in a different Context

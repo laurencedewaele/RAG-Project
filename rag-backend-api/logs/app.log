@@ -1,0 +1,103 @@
+2026-08-01 11:49:01,096 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 11:49:01,735 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 11:49:05,348 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 11:49:05,668 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 11:49:09,480 - chromadb.telemetry.product.posthog - [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-08-01 11:49:12,155 - chatbot.backend.observability - [INFO] - langfuse.client.initialized
+2026-08-01 11:49:25,693 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 11:49:26,034 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 11:50:14,979 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-08-01 11:50:14,995 - chatbot.backend.observability - [INFO] - trace.start
+2026-08-01 11:50:17,203 - chatbot.backend.inbound - [ERROR] - ask_question_failure
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\adapters\inbound\api\app.py", line 93, in ask_question
+    result = await run_in_threadpool(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\application\use_cases\ask_question.py", line 193, in execute
+    self._evaluation.enqueue(
+TypeError: RagasEvaluationAdapter.enqueue() got an unexpected keyword argument 'observation_id'
+2026-08-01 11:50:17,234 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:50:36,089 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:50:36,208 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:50:45,950 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:50:45,975 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:51:43,193 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:51:43,233 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:51:51,264 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:51:51,755 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 11:52:08,327 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-08-01 11:52:08,327 - chatbot.backend.observability - [INFO] - trace.start
+2026-08-01 11:52:10,121 - chatbot.backend.inbound - [ERROR] - ask_question_failure
+Traceback (most recent call last):
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\adapters\inbound\api\app.py", line 93, in ask_question
+    result = await run_in_threadpool(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Laurence\GOT\ChatBot\HF_chatbot_refacto\chatbot-rag-backend\src\application\use_cases\ask_question.py", line 193, in execute
+    self._evaluation.enqueue(
+TypeError: RagasEvaluationAdapter.enqueue() got an unexpected keyword argument 'observation_id'
+2026-08-01 11:52:10,122 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 12:01:25,808 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 12:01:27,032 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 12:01:30,395 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 12:01:30,738 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 12:01:34,945 - chromadb.telemetry.product.posthog - [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-08-01 12:01:36,411 - chatbot.backend.observability - [INFO] - langfuse.client.initialized
+2026-08-01 12:01:48,510 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 12:01:48,900 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 12:02:22,083 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 12:02:22,396 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 12:02:28,437 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-08-01 12:02:28,437 - chatbot.backend.observability - [INFO] - trace.start
+2026-08-01 12:02:30,648 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 12:02:55,034 - ragas.prompt.pydantic_prompt - [WARNING] - LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-01 12:04:40,353 - chatbot.backend.ragas - [INFO] - ragas.evaluation.success
+2026-08-01 17:07:27,573 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 17:07:28,116 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 17:07:31,443 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 17:07:31,726 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 17:07:35,480 - chromadb.telemetry.product.posthog - [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-08-01 17:07:37,063 - chatbot.backend.observability - [INFO] - langfuse.client.initialized
+2026-08-01 17:07:49,894 - sentence_transformers.base.model - [INFO] - No device provided, using cpu
+2026-08-01 17:07:50,189 - sentence_transformers.base.model - [INFO] - Loading SentenceTransformer model from sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+2026-08-01 17:08:38,197 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-08-01 17:08:38,198 - chatbot.backend.observability - [INFO] - trace.start
+2026-08-01 17:08:40,203 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 17:09:29,685 - ragas.prompt.pydantic_prompt - [WARNING] - LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-01 17:10:03,165 - openai._base_client - [INFO] - Retrying request to /chat/completions in 0.411131 seconds
+2026-08-01 17:10:52,385 - chatbot.backend.ragas - [INFO] - ragas.evaluation.success
+2026-08-01 17:31:21,577 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-08-01 17:31:21,578 - chatbot.backend.observability - [INFO] - trace.start
+2026-08-01 17:31:23,456 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 17:31:56,716 - ragas.prompt.pydantic_prompt - [WARNING] - LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-01 17:32:55,416 - chatbot.backend.ragas - [INFO] - ragas.evaluation.success
+2026-08-01 17:33:38,486 - langfuse - [WARNING] - Unknown observation type: None, falling back to span
+2026-08-01 17:33:38,486 - chatbot.backend.observability - [INFO] - trace.start
+2026-08-01 17:33:41,399 - chatbot.backend.inbound - [INFO] - http.request
+2026-08-01 17:33:52,453 - openai._base_client - [INFO] - Retrying request to /chat/completions in 0.382744 seconds
+2026-08-01 17:34:28,246 - ragas.prompt.pydantic_prompt - [WARNING] - LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-01 17:35:01,713 - openai._base_client - [INFO] - Retrying request to /chat/completions in 0.467472 seconds
+2026-08-01 17:35:58,366 - chatbot.backend.ragas - [INFO] - ragas.evaluation.success

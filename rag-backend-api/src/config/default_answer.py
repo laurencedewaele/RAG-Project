@@ -1,0 +1,1 @@
+DEFAULT_ANSWER = """Je ne dispose pas d'informations sur ce sujet."""
