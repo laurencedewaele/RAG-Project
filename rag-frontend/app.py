@@ -229,6 +229,12 @@ with gr.Blocks(title="Chatbot Search", css=custom_css) as demo:
     current_trace_id = gr.State()
 
     sel_query = gr.Textbox(label="Query")
+
+    with gr.Row():
+        gr.Markdown("Exemples :")
+        example_member = gr.Button("Comment devenir membre ?")
+        example_purpose = gr.Button("Quel est le but de l'association ?")
+
     chatbot = gr.Chatbot()
 
     with gr.Row():
@@ -258,6 +264,19 @@ with gr.Blocks(title="Chatbot Search", css=custom_css) as demo:
         inputs=[sel_query, sel_top_k, use_mmr, lambda_slider, list_history, session_state, user_state, thinking_budget, similarity_threshold],
         outputs=[list_passages, details_md, list_history, chatbot, current_trace_id],
     ).then(lambda: "", outputs=[sel_query])
+
+    for example_button, question in [
+        (example_member, "Comment devenir membre ?"),
+        (example_purpose, "Quel est le but de l'association ?"),
+    ]:
+        example_button.click(
+            fn=lambda value=question: value,
+            outputs=[sel_query],
+        ).then(
+            rag_pipeline,
+            inputs=[sel_query, sel_top_k, use_mmr, lambda_slider, list_history, session_state, user_state, thinking_budget, similarity_threshold],
+            outputs=[list_passages, details_md, list_history, chatbot, current_trace_id],
+        ).then(lambda: "", outputs=[sel_query])
 
     btn_like.click(
         positive_feedback,

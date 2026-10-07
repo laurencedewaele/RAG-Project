@@ -27,3 +27,5 @@ Thumbs.db
 
 # Local documentation
 README_infos_localhost.md
+*.docx
+*.png
